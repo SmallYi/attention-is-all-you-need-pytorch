@@ -22,7 +22,13 @@ Note that this project is still a work in progress.
 
 
 If there is any suggestion or error, feel free to fire an issue to let me know. :)
-
+# Env
+dill==0.3.3
+python==3.8.8
+pytorch==1.8.0
+spacy==3.0.3
+torchtext==0.6.0
+tqdm==4.56.0
 
 # Usage
 
