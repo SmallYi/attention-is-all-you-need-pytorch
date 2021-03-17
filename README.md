@@ -23,12 +23,14 @@ Note that this project is still a work in progress.
 
 If there is any suggestion or error, feel free to fire an issue to let me know. :)
 # Env
+```python
 dill==0.3.3
 python==3.8.8
 pytorch==1.8.0
 spacy==3.0.3
 torchtext==0.6.0
 tqdm==4.56.0
+```
 
 # Usage
 
@@ -36,9 +38,9 @@ tqdm==4.56.0
 
 An example of training for the WMT'16 Multimodal Translation task (http://www.statmt.org/wmt16/multimodal-task.html).
 
-### 0) Download the spacy language model.
+### 0) Download the spacy language model.Spacy(https://spacy.io/usage)
 ```bash
-# conda install -c conda-forge spacy 
+# conda install -c conda-forge spacy
 python -m spacy download en
 python -m spacy download de
 ```
