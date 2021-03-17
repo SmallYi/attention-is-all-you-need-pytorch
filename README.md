@@ -49,13 +49,11 @@ python -m spacy download de_core_news_sm
 ### 1) Preprocess the data with torchtext and spacy.
 ```bash
 python preprocess.py -lang_src de -lang_trg en -share_vocab -save_data m30k_deen_shr.pkl
-
-python preprocess.py -lang_src de_core_news_sm -lang_trg en_core_web_sm -share_vocab -save_data m30k_deen_shr.pkl
 ```
 
 ### 2) Train the model
 ```bash
-python train.py -data_pkl m30k_deen_shr.pkl -log m30k_deen_shr -embs_share_weight -proj_share_weight -label_smoothing -output_dir output -b 256 -warmup 128000 -epoch 400
+python train.py -data_pkl m30k_deen_shr.pkl -embs_share_weight -proj_share_weight -label_smoothing -output_dir output -b 256 -warmup 128000 -epoch 400 -no_cuda
 ```
 
 ### 3) Test the model
