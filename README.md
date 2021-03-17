@@ -38,7 +38,7 @@ tqdm==4.56.0
 
 An example of training for the WMT'16 Multimodal Translation task (http://www.statmt.org/wmt16/multimodal-task.html).
 
-### 0) Download the spacy language model.Spacy(https://spacy.io/usage)
+### 0) Download the spacy language model.(https://spacy.io/usage)
 ```bash
 # conda install -c conda-forge spacy
 python -m spacy download en
