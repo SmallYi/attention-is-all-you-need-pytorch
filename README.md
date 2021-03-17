@@ -41,9 +41,9 @@ An example of training for the WMT'16 Multimodal Translation task (http://www.st
 ### 0) Download the spacy language model.(https://spacy.io/usage)
 ```bash
 conda install -c conda-forge spacy
-python -m spacy download zh_core_web_sm
-python -m spacy download en_core_web_sm
-python -m spacy download de_core_news_sm
+python -m spacy download zh_core_web_sm / zh_core_web_trf
+python -m spacy download en_core_web_sm / en_core_web_trf
+python -m spacy download de_core_news_sm / de_dep_news_trf
 ```
 
 ### 1) Preprocess the data with torchtext and spacy.
