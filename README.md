@@ -46,7 +46,7 @@ python -m spacy download en_core_web_sm / en_core_web_trf
 python -m spacy download de_core_news_sm / de_dep_news_trf
 ```
 
-### 1) Preprocess the data with torchtext and spacy.
+### 1) Preprocess the data with torchtext and spacy.(main_wo_bpe())
 ```bash
 python preprocess.py -lang_src de -lang_trg en -save_data m30k_deen_shr.pkl
 ```
@@ -95,7 +95,7 @@ _TRAIN_DATA_SOURCES = [
 ```
 可以借助preprocess.py-main()下载中英翻译数据集，也可以自己下载解压
 
-### 1) Preprocess the data with torchtext and spacy.
+### 1) Preprocess the data with torchtext and spacy.(create_zh_en())
 ```bash
 python preprocess.py -lang_src en -lang_trg zh -save_data test_en_zh.pkl
 ```
