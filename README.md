@@ -80,6 +80,31 @@ python train.py -data_pkl ./bpe_deen/bpe_vocab.pkl -train_path ./bpe_deen/deen-t
 	- Load vocabulary.
 	- Perform decoding after the translation.
 ---
+
+## WMT'17 Multimodal Translation: en-zh
+
+An example of training for the WMT'17 Multimodal Translation task (http://data.statmt.org/wmt17/translation-task/training-parallel-nc-v12.tgz).
+
+### 0) Download the language dateset.(preprocess.py-main())
+```bash
+_TRAIN_DATA_SOURCES = [
+    {"url": "http://data.statmt.org/wmt17/translation-task/" \
+             "training-parallel-nc-v12.tgz",
+     "trg": "news-commentary-v12.zh-en.en",
+     "src": "news-commentary-v12.zh-en.zh"}
+```
+可以借助preprocess.py-main()下载中英翻译数据集，也可以自己下载解压
+
+### 1) Preprocess the data with torchtext and spacy.
+```bash
+python preprocess.py -lang_src en -lang_trg zh -save_data test_en_zh.pkl
+```
+
+### 2) Train the model
+```bash
+python train.py -data_pkl test_en_zh.pkl -proj_share_weight -label_smoothing -output_dir output
+```
+
 # Performance
 ## Training
 
