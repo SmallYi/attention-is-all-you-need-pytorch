@@ -136,8 +136,8 @@ python train.py -data_pkl test_en_zh.pkl -proj_share_weight -label_smoothing -ou
 - Thanks for the suggestions from @srush, @iamalbert, @Zessay, @JulesGM, @ZiJianZhao, and @huanghoujing.
 
 # Tensorboard[可视化](https://www.jianshu.com/p/46eb3004beca)
-### 1)连接服务器虚拟python环境
 ```bash
+连接服务器虚拟python环境
 启动pycharm-terminal
 tensorboard --logdir output/tensorboard
 ```
