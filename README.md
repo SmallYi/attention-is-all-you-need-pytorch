@@ -134,3 +134,10 @@ python train.py -data_pkl test_en_zh.pkl -proj_share_weight -label_smoothing -ou
 - The byte pair encoding parts are borrowed from [subword-nmt](https://github.com/rsennrich/subword-nmt/).
 - The project structure, some scripts and the dataset preprocessing steps are heavily borrowed from [OpenNMT/OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py).
 - Thanks for the suggestions from @srush, @iamalbert, @Zessay, @JulesGM, @ZiJianZhao, and @huanghoujing.
+
+# Tensorboard
+### 1)连接服务器虚拟python环境
+```bash
+启动pycharm-terminal
+tensorboard --logdir output/tensorboard
+```
