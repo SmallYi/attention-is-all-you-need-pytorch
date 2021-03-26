@@ -53,7 +53,7 @@ python preprocess.py -lang_src de -lang_trg en -save_data m30k_deen_shr.pkl
 
 ### 2) Train the model
 ```bash
-python train.py -data_pkl m30k_deen_shr.pkl -proj_share_weight -label_smoothing -output_dir output -b 256 -warmup 4000 -epoch 400
+python train.py -data_pkl m30k_de_en_shr.pkl -proj_share_weight -label_smoothing -output_dir output -use_tb -b 256 -warmup 4000 -d_model 512 -d_inner_hid 1024 -d_k 32 -d_v 32 -n_head 8 -n_layers 6 -dropout 0.2
 ```
 
 ### 3) Test the model
