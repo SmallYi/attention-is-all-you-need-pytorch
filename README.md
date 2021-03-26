@@ -144,5 +144,8 @@ tensorboard --logdir output/tensorboard
 
 # Screen后台运行
 ```bash
-
+screen -ls 显示
+screen -S session 创建
+screen -r -S session 连接
+screen -D -r -S session 抢占
 ```
