@@ -135,9 +135,14 @@ python train.py -data_pkl test_en_zh.pkl -proj_share_weight -label_smoothing -ou
 - The project structure, some scripts and the dataset preprocessing steps are heavily borrowed from [OpenNMT/OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py).
 - Thanks for the suggestions from @srush, @iamalbert, @Zessay, @JulesGM, @ZiJianZhao, and @huanghoujing.
 
-# Tensorboard
+# Tensorboard[可视化](https://www.jianshu.com/p/46eb3004beca)
 ### 1)连接服务器虚拟python环境
 ```bash
 启动pycharm-terminal
 tensorboard --logdir output/tensorboard
+```
+
+# Screen后台运行
+```bash
+
 ```
